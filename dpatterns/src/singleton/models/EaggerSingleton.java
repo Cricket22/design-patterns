@@ -6,7 +6,8 @@ public class EaggerSingleton {
     private EaggerSingleton() {
     }
 
-    public static EaggerSingleton getCarEagger(){
+    public static EaggerSingleton getInstance(){
+        System.out.println("\nMy instance was already available.");
         return EAGGER_SINGLETON_INSTANCE;
     }
 

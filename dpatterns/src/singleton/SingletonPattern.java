@@ -11,10 +11,11 @@ import singleton.models.LazzySingleton;
 public class SingletonPattern {
 
     public void example1(){
-        EaggerSingleton.getCarEagger().whoAmI();
+        EaggerSingleton.getInstance().whoAmI();
     }
 
     public void example2(){
+        LazzySingleton.getInstance().whoAmI();
         LazzySingleton.getInstance().whoAmI();
     }
 }
