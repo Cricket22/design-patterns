@@ -26,11 +26,6 @@ public class OrderFormBuilder implements FormBuilder {
         return this;
     }
 
-    public OrderFormBuilder setNotMandatoryField(String notMandatoryField){
-        orderForm.setNotMandatoryField(notMandatoryField);
-        return this;
-    }
-
     @Override
     public OrderForm build() {
         return this.orderForm;

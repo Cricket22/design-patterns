@@ -1,6 +1,5 @@
 package singleton.models;
 
-import factory.models.Car;
 
 public class LazzySingleton {
         private static LazzySingleton LAZZY_SINGLETON_INSTANCE;
