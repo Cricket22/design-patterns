@@ -1,16 +1,17 @@
 package adapter;
 
 import adapter.adapters.FigureAdapter;
-import adapter.models.Figure;
 import adapter.models.Rectangle;
-import builder.builders.OrderFormBuilder;
-import builder.builders.SignInFormBuilder;
-import builder.models.OrderForm;
-import builder.models.SignInForm;
 
 public class AdapterPattern {
 
+    public AdapterPattern() {
+        System.out.println("\n\n*** Adapter pattern. ***");
+    }
+
     public void example1(){
+        System.out.println("\n* Example 1. *");
+
         Rectangle rectangle = new Rectangle(5f,5f);
         FigureAdapter figureAdapter = new FigureAdapter(rectangle);
         figureAdapter.whoAmI();

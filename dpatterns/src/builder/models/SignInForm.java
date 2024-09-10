@@ -13,12 +13,12 @@ public class SignInForm extends Form {
 
     @Override
     public void render() {
-        System.out.println(this.toString());
+        System.out.println(this);
     }
 
     @Override
     public String toString() {
-        return "\n\nName: " + this.getName() + "\nAddress: " + this.getEmail()
+        return "\nName: " + this.getName() + "\nAddress: " + this.getEmail()
                 + "\nPassword: " + this.getPassword();
     }
 }
